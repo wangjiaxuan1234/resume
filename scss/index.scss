@@ -1,0 +1,75 @@
+ // reset css
+ * {
+     padding: 0;
+     margin: 0;
+ }
+ 
+ .header {
+     display: flex;
+     height: 124px;
+     width: 100%;
+     margin: auto;
+     justify-content: space-between;
+     align-items: center;
+     position: fixed;
+     padding: 0 300px;
+     box-sizing: border-box;
+     transition: all ease .5s;
+     .menu_box {
+         display: flex;
+         justify-content: space-between;
+         position: relative;
+         li {
+             margin-right: 40px;
+             list-style: none;
+             color: #7e7e7e;
+             font-family: poppins;
+             font-size: 16px;
+             font-weight: 500;
+             display: flex;
+             align-items: center;
+             transition: all ease .2s;
+             &.active {
+                 color: #dd4242;
+             }
+             &.contact {
+                 border: 2px solid #7e7e7e;
+                 padding: 8px 27px;
+                 border-radius: 50px;
+                 color: #0f172a;
+                 &:hover {
+                     background-color: #dd4242;
+                     color: #fff;
+                     border-color: #dd4242;
+                 }
+                 &.active {
+                     background-color: #dd4242;
+                     color: #fff;
+                     border-color: #dd4242;
+                 }
+             }
+             &:hover {
+                 color: #dd4242;
+                 cursor: pointer;
+             }
+         }
+         .underline {
+             height: 2px;
+             background-color: #dd4242;
+             display: inline-block;
+             position: absolute;
+             bottom: -5px;
+             transition: all ease 0.3s;
+         }
+     }
+     &.roll_up {
+         height: 84px;
+         background-color: #fff;
+         box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+     }
+ }
+ 
+ .banner {
+     height: 2000px;
+     background-color: violet;
+ }

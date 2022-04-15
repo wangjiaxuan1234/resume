@@ -1,0 +1,102 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 124px;
+  width: 100%;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  padding: 0 300px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-transition: all ease .5s;
+  transition: all ease .5s;
+}
+
+.header .menu_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: relative;
+}
+
+.header .menu_box li {
+  margin-right: 40px;
+  list-style: none;
+  color: #7e7e7e;
+  font-family: poppins;
+  font-size: 16px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all ease .2s;
+  transition: all ease .2s;
+}
+
+.header .menu_box li.active {
+  color: #dd4242;
+}
+
+.header .menu_box li.contact {
+  border: 2px solid #7e7e7e;
+  padding: 8px 27px;
+  border-radius: 50px;
+  color: #0f172a;
+}
+
+.header .menu_box li.contact:hover {
+  background-color: #dd4242;
+  color: #fff;
+  border-color: #dd4242;
+}
+
+.header .menu_box li.contact.active {
+  background-color: #dd4242;
+  color: #fff;
+  border-color: #dd4242;
+}
+
+.header .menu_box li:hover {
+  color: #dd4242;
+  cursor: pointer;
+}
+
+.header .menu_box .underline {
+  height: 2px;
+  background-color: #dd4242;
+  display: inline-block;
+  position: absolute;
+  bottom: -5px;
+  -webkit-transition: all ease 0.3s;
+  transition: all ease 0.3s;
+}
+
+.header.roll_up {
+  height: 84px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.banner {
+  height: 2000px;
+  background-color: violet;
+}

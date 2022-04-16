@@ -3,6 +3,24 @@
   margin: 0;
 }
 
+.plscrollbar::-webkit-scrollbar {
+  width: 5px;
+}
+
+.plscrollbar::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: white;
+}
+
+.plscrollbar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #ccc;
+}
+
 .header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -97,6 +115,103 @@
 }
 
 .banner {
-  height: 2000px;
-  background-color: violet;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 930px;
+  background-image: url(../img/banner/1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner .banner_content {
+  display: inline-block;
+  font-weight: 600;
+  font-family: 'Times New Roman', Times, serif;
+  position: fixed;
+  padding: 200px 300px;
+  max-width: 710px;
+}
+
+.banner .banner_content h3 {
+  font-size: 75px;
+}
+
+.banner .banner_content .middle_text {
+  color: #dd4242;
+  font-size: 75px;
+}
+
+.banner .banner_content .banner_text {
+  font-size: 18px;
+  font-family: poppins;
+  font-weight: 500;
+  margin-top: 40px;
+  color: #7e7e7e;
+  line-height: 32px;
+}
+
+.banner .banner_content .link_box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.banner .banner_content .link_box .icon {
+  display: inline-block;
+  width: 66px;
+  height: 66px;
+  background-color: #dd4242;
+  border-radius: 33px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .banner_content .link_box .icon::after {
+  content: "";
+  border: 10px solid white;
+  border-left-width: 15px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  border-bottom-color: transparent;
+  position: relative;
+  left: 7px;
+}
+
+.banner .banner_content .link_box .icon:hover {
+  background-color: #0f172a;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+
+.banner .banner_content .link_box .discription {
+  margin-left: 20px;
+  font-family: poppins;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.banner .banner_content .link_box .discription .top {
+  display: block;
+  color: #7e7e7e;
+}
+
+.banner .banner_content .link_box .discription .bottom {
+  display: block;
+  color: #dd4242;
+}
+
+.banner .banner_content .link_box .discription hr {
+  margin: 10px 0 8px;
 }

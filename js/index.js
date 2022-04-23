@@ -45,3 +45,13 @@ window.addEventListener('scroll', function() {
         header.classList.remove('roll_up')
     }
 })
+
+
+$(function() {
+    $(".link_box").click(function() {
+        $("#show-video").show();
+    })
+    $(".video-close").click(function() {
+        $("#show-video").hide();
+    })
+})

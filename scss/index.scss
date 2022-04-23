@@ -32,6 +32,7 @@
     padding: 0 300px;
     box-sizing: border-box;
     transition: all ease .5s;
+    z-index: 999;
     .menu_box {
         display: flex;
         justify-content: space-between;
@@ -96,7 +97,6 @@
         display: inline-block;
         font-weight: 600;
         font-family: 'Times New Roman', Times, serif;
-        position: fixed;
         padding: 200px 300px;
         max-width: 710px;
         h3 {
@@ -162,4 +162,35 @@
             }
         }
     }
+}
+
+// 弹窗样式
+#show-video {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 999 !important;
+    background: rgba(0, 0, 0, .85);
+    display: none;
+    text-align: center;
+}
+
+.video-close {
+    width: 45px;
+    height: 45px;
+    z-index: 999;
+    cursor: pointer;
+    position: absolute;
+    color: #fff;
+    margin-top: 3%;
+}
+
+#show-video video {
+    // width: 100%;
+    outline: none;
+    max-width: 85%;
+    max-height: 88vh;
+    margin-top: 5%;
 }
